@@ -22,6 +22,7 @@ textarea {
 
 .row {
   border-top: 1px solid white;
+  --bs-gutter-x: -0.5rem;
 }
 
 .hour {
@@ -31,7 +32,7 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: antiquewhite;
   color: white;
 }
 

@@ -3,6 +3,15 @@
 // in the html.
 // $(function () {
   // let button = document.getElementById("saveBtn");
+//});
+var hour = for(hour = 1; hour <= 12; hour++);
+
+if (hour <= 1200) { time = "past"
+} else if (hour <= 1700) { 
+  time = "present";
+} else {
+  time = "future";
+}
 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -22,4 +31,4 @@
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
-});
+
