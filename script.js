@@ -36,7 +36,10 @@ var setHour = function (hourBlock) {
   var saveBtn = hourBlock.querySelector('.saveBtn')
   console.log(saveBtn)
 
-saveBtn.addEventListener
+  saveBtn.addEventListener('click', function(){
+    var textInput = textArea.value;
+    console.log(textInput)
+  })
 
 };
 document.querySelectorAll(".row").forEach(setHour);
