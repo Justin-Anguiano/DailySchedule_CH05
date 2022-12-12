@@ -50,11 +50,11 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #000000;
+  background-color: #1a10d5;
   color: white;
 }
 
-.saveBtn i:hover {
+.saveBtn :hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }

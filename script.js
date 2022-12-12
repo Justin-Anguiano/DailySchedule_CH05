@@ -6,6 +6,13 @@
 //});
 // var dayWeek = today.format('[Today is] dddd');
 // $('#day').text(dayWeek);
+var storageInput = document.querySelector(".saveBtn");
+var text = document.querySelector(".description");
+var textarea = document.querySelector(".row");
+
+storageInput.addEventListener("inpu", (letter) => {
+  text.textContent = letter.target.value;
+});
 
 var today = dayjs();
 $("#date").text(today.format("MMM D, YYYY"));
@@ -33,18 +40,21 @@ var setHour = function (hourBlock) {
   } else {
     textArea.classList.add("future");
   }
-  var saveBtn = hourBlock.querySelector('.saveBtn')
-  console.log(saveBtn)
+  var saveBtn = hourBlock.querySelector(".saveBtn");
+  console.log(saveBtn);
 
-  saveBtn.addEventListener('click', function(){
+  saveBtn.addEventListener("click", function () {
     var textInput = textArea.value;
-    console.log(textInput)
-  })
-
+    console.log(textInput);
+  });
 };
 document.querySelectorAll(".row").forEach(setHour);
 
-
+console.log(localStorage);
+ var saveToStorage = () => {
+   localStorage.setItem("textinput", text.textContent);
+};
+saveBtn.addEventListener("click", saveToStorage);
 
 // TODO: Add a listener for click events on the save button. This code should
 // use the id in the containing time-block as a key to save the user input in
